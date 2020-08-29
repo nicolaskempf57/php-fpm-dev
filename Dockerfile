@@ -1,4 +1,4 @@
-FROM registry.dev.nicolaskempf.fr/nicolaskempf57/php-fpm
+FROM registry.dev.nicolaskempf.fr/nicolaskempf57/php-fpm::7.4
 USER "root"
 RUN apk update \
     && apk add --no-cache $PHPIZE_DEPS \
